@@ -120,6 +120,15 @@ body {
     text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
+.date-label {
+    font-size: 12px;
+    opacity: 0.85;
+    margin-bottom: 4px;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 1px;
+}
+
 .subtitle {
     font-size: 14px;
     opacity: 0.95;
