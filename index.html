@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哆啦线报 - 京东家政赠品</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 公告横幅：点击跳转公众号 -->
+    <div class="announcement">
+        <a id="announcement-link" href="#" target="_blank">
+            <span class="announcement-icon">📢</span>
+            <span id="announcement-text">加载中...</span>
+            <span class="announcement-arrow">›</span>
+        </a>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <h1 id="page-title">哆啦线报</h1>
+            <p class="subtitle">买商品送京东家政，省心薅羊毛</p>
+        </header>
+
+        <!-- 分类标签栏 -->
+        <div class="category-tabs" id="category-tabs">
+            <div class="tab active" data-cat="all">全部</div>
+        </div>
+
+        <!-- 排序 -->
+        <div class="sort-bar">
+            <label for="sort-select">排序：</label>
+            <select id="sort-select">
+                <option value="default">默认</option>
+                <option value="price-asc">价格从低到高</option>
+                <option value="price-desc">价格从高到低</option>
+                <option value="name">名称</option>
+            </select>
+        </div>
+
+        <div id="products-container">
+            <p class="loading">数据加载中...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
